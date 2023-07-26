@@ -1,0 +1,137 @@
+
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-title:hover{
+    color: magenta;
+}
+
+.categories_img {
+    background-image: url();
+}
+
+
+.content {
+    width: 80%;
+}
+
+.sales {
+    width: 100%;
+    height: 15rem;
+    background-image: url("/static/images/sales.jpg");
+}
+
+.main-corusel {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.slide {
+    width: 100%;
+    height: 25rem;
+    border-radius: 2rem;
+    background-image: url("/static/images/corusel.png");
+    padding-top: 3rem;
+}
+
+.category__wrapper {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.category_container {
+    margin-top: 2rem;
+    padding-top: 3rem;
+    width: 90%;
+    border: 3px solid cadetblue;
+    border-radius: 2rem;
+}
+
+.category-icon {
+    width: 95%;
+    margin-top: 1rem;
+}
+
+.category_container:hover{
+    background: cyan;
+    border-radius: 2rem;
+}
+
+.category-title{
+    color: cadetblue;
+    text-shadow: 0 0 1rem cyan;
+    font-size: 2rem;
+}
+
+.category-title:hover{
+    text-shadow: 0 0 1rem darkmagenta;
+    color: magenta;
+}
+
+.best__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border-radius: 2rem;
+}
+
+.product{
+    padding: 2rem;
+}
+.product-icon {
+    height: 20rem;
+    border-radius: 2rem;
+}
+
+
+.sections-icon{
+    max-width: 25rem;
+    background: linear-gradient(to right, rgba(131, 131, 131, 0.059), rgba(255, 255, 255, 0.384), rgba(146, 146, 146, 0.11));
+}
+
+.category-image{
+    height: 15rem;
+}
+
+.banner_category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 25rem;
+    background-image: url("/static/images/bdsm.png");
+}
+
+.section__title{
+    color: white;
+    font-size: 15rem;
+}
+
+
+.slide, .sales, .banner_category{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

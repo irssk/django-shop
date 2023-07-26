@@ -1,0 +1,33 @@
+<div class="best__wrapper">
+{% for product in products%}
+    <div class="product">
+        <div>
+            <div class="product-container">
+                <img
+                class="product-icon" 
+                src="../../../../media/{{product.image}}" 
+                alt="Not image"
+                >
+                
+                <div>
+                    <div class="product_label">
+                        {{product.label}}
+                    </div>
+
+                    <div class="product_rating">
+                        {{product.rating}}
+                    </div>
+
+                    <div class="product_price">
+                        {{product.price}}
+                    </div>
+
+                    <a href="../product/{{product.slug}}">BUY</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+{% endfor%}
+</div>

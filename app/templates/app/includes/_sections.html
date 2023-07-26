@@ -1,0 +1,43 @@
+<div class="section__wrapper">
+    {%for section in need_section%}
+    <div class="section">
+        <div class="banner_category">
+            <img 
+                class="sections-icon" 
+                src="../../../../media/{{section.image}}" 
+                alt="Not image"
+            >
+            <div class="section__title">
+                {{section.title}}
+            </div>
+        </div>
+    </div>
+
+    <div class="section__description">
+        {{section.description}}
+    </div>
+    {%endfor%}
+</div>
+
+<div class="category__wrapper">
+    {% for cat in categories_of_sextion_arr %}
+    <div class="category__container">
+        <div class="category-title">
+            <a href="/category/{{cat.slug}}">{{cat.title}}</a>
+        </div>    
+
+        <div class="category-img">
+            <img 
+                class="category-image" 
+                src="../../../../media/{{cat.image}}" 
+                alt="Not image"
+            >
+        </div>
+
+        <div class="category-description">
+            {{cat.description}}
+        </div>  
+    </div>
+    {% endfor %}
+</div>
+

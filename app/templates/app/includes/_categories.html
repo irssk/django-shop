@@ -1,0 +1,13 @@
+<div class="category__wrapper">
+    {% for category in categories %}
+    <div class="category_container">
+        <a href="category/{{category.slug}}" class="category-title">
+            {{category.title}}
+        </a>
+
+        <div class="category-img">
+            <img class="category-icon" src="../../../../media/{{category.image}}" alt="Not image">
+        </div>
+    </div>
+    {% endfor %}
+</div>

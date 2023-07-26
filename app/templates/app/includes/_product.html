@@ -1,0 +1,33 @@
+{% for el in need_product%}
+    <div class="product">
+        <div>
+            <div class="product-container">
+                <img
+                class="product-icon" 
+                src="../../../../media/{{el.image}}" 
+                alt="Not image"
+                >
+                
+                <div>
+                    <div class="product_label">
+                        {{el.label}}
+                    </div>
+
+                    <div class="product_rating">
+                        {{el.rating}}
+                    </div>
+
+                    <div class="product_price">
+                        {{el.price}}
+                    </div>
+
+                    <button>BUY</button>
+                </div>
+            </div>
+            
+            <div class="product_description">
+                {{el.description}}
+            </div>
+        </div>
+    </div>
+{% endfor%}
